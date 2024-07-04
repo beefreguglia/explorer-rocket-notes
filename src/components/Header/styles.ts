@@ -10,7 +10,7 @@ export const Container = styled.header`
 
   display: flex;
   justify-content: space-between;
-  pad: 0 80px;
+  padding: 0 80px;
 `;
 
 export const Profile = styled.div`
@@ -39,4 +39,14 @@ export const Profile = styled.div`
       columns: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
-`
+`;
+
+export const Logout = styled.button`
+  border: none;
+  background: none;
+  
+  > svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    font-size: 24px;
+  }
+`;
