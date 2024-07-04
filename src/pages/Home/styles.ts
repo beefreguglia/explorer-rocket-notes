@@ -7,7 +7,6 @@ export const Container = styled.div`
   padding: .5rem;
   grid-template-columns: 250px auto;
   grid-template-rows: 105px 128px auto 64px;
-  grid-column-gap: 0.5rem;
   grid-template-areas: 
   "brand header"
   "menu search"
@@ -47,6 +46,7 @@ export const Menu = styled.ul`
 
 export const Search = styled.div`
   grid-area: search;
+  padding: 64px 64px 0;
 `;
 
 export const Content = styled.div`
