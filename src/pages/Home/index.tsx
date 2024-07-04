@@ -1,3 +1,4 @@
+import { ButtonText } from "../../components/ButtonText";
 import { Header } from "../../components/Header";
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles";
 
@@ -9,7 +10,11 @@ export function Home() {
         <h1>Rocketnotes</h1>
       </Brand>
       <Header />
-      <Menu></Menu>
+      <Menu>
+        <li><ButtonText isActive>Todos</ButtonText></li>
+        <li><ButtonText>React</ButtonText></li>
+        <li><ButtonText>Node</ButtonText></li>
+      </Menu>
       <Search></Search>
       <Content></Content>
       <NewNote></NewNote>

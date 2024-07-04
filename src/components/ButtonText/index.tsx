@@ -3,11 +3,19 @@ import { Container } from "./style";
 
 interface ButtonTextProps extends ButtonHTMLAttributes<HTMLButtonElement>{
   children?: ReactNode;
+  isActive?: boolean;
 }
 
-export function ButtonText({ children, ...rest}: ButtonTextProps) {
+export function ButtonText({ 
+  children,
+  isActive = false,
+  ...rest
+}: ButtonTextProps) {
   return (
-    <Container {...rest}>
+    <Container
+      $isactive={isActive.toString()} 
+      {...rest}
+    >
       {children}
     </Container>
   )
